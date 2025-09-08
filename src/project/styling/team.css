@@ -119,3 +119,194 @@
     transform: translateX(-50%);
   }
 }
+/* Team Page */
+.info-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+/* Heading */
+.info-heading {
+  font-size: 3.5rem;
+  margin: 2rem 0;
+  color: #00f7ff;
+  text-shadow: 0 0 20px #00f7ff;
+}
+
+/* Senior Grid Layout */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  padding: 0 4rem;
+  justify-items: center;
+}
+
+/* Senior Card Style */
+.team-card {
+  background: #111;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(0, 247, 255, 0.7);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.team-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 3px solid #00f7ff;
+}
+
+.team-card h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0 0;
+  color: #00f7ff;
+}
+
+.team-card p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0 0.8rem;
+  color: #ccc;
+}
+
+.team-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(0, 247, 255, 1);
+}
+
+/* Junior Section */
+.juniors-container {
+  margin-top: 4rem;
+  overflow: hidden;
+  width: 100%;
+  background: transparent;
+  padding: 1rem 0;
+}
+
+.juniors-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+}
+
+.juniors-card {
+  background: #111;
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(0, 247, 255, 0.7);
+  overflow: hidden;
+  width: 300px;
+  height: 420px;
+  text-align: center;
+  flex: 0 0 auto;
+}
+
+.juniors-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-bottom: 3px solid #00f7ff;
+}
+
+.juniors-card h3 {
+  font-size: 1.4rem;
+  margin: 0.5rem 0 0;
+  color: #00f7ff;
+}
+
+.juniors-card p {
+  font-size: 1.1rem;
+  margin: 0.3rem 0 0.8rem;
+  color: #ccc;
+}
+
+/* Infinite scroll animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .info-heading {
+    font-size: 2.8rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+  }
+
+  .team-card,
+  .juniors-card {
+    width: 260px;
+    height: 370px;
+  }
+
+  .team-card img,
+  .juniors-card img {
+    height: 260px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .juniors-track {
+    gap: 1.2rem;
+    animation-duration: 60s; /* slower for readability */
+  }
+
+  .juniors-card {
+    width: 200px;
+    height: 300px;
+    flex: 0 0 200px;
+  }
+
+  .juniors-card img {
+    height: 200px;
+  }
+
+  .juniors-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .juniors-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .juniors-track {
+    gap: 1rem;
+    animation-duration: 70s; /* even slower */
+  }
+
+  .juniors-card {
+    width: 160px;
+    height: 250px;
+    flex: 0 0 160px;
+  }
+
+  .juniors-card img {
+    height: 160px;
+  }
+}

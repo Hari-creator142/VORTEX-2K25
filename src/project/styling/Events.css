@@ -20,6 +20,7 @@
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
 
+/* ✅ Tabs */
 .event-tabs {
   display: flex;
   justify-content: center;
@@ -45,6 +46,7 @@
   color: #0a0a0a;
 }
 
+/* ✅ Flip Card */
 .flip-card {
   background: transparent;
   width: 100%;
@@ -107,8 +109,8 @@
 .event-buttons {
   display: flex;
   flex-direction: column;
-  align-items: center;   /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center;
+  justify-content: center;
   gap: 0.7rem;
   width: 100%;
 }
@@ -142,4 +144,122 @@
 .register-btn:hover {
   transform: scale(1.05);
   background: #d600d6;
+}
+
+/* ✅ Responsive Fixes */
+@media (max-width: 1024px) {
+  .events-heading {
+    font-size: 2.5rem;
+  }
+
+  .event-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .flip-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .events-page {
+    padding: 1rem;
+  }
+
+  .events-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr;  /* ✅ Single column on mobile */
+    gap: 1rem;
+  }
+
+  .flip-card {
+    height: 220px;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.2rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9rem;
+  }
+
+  .event-buttons button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-heading {
+    font-size: 1.6rem;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+
+  .event-buttons {
+    gap: 0.5rem;
+  }
+
+  .event-buttons button {
+    width: 100%; /* ✅ Full width buttons on very small screens */
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .events-page {
+    padding: 1rem;
+  }
+
+  .events-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .event-grid {
+    grid-template-columns: 1fr; /* ✅ Single column */
+    gap: 1rem;
+  }
+
+  .flip-card {
+    height: 220px;
+  }
+
+  .flip-card-back h3 {
+    font-size: 1.2rem;
+  }
+
+  .flip-card-back p {
+    font-size: 0.9rem;
+  }
+
+  .event-buttons button {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .events-heading {
+    font-size: 1.6rem;
+  }
+
+  .flip-card {
+    height: 200px;
+  }
+
+  .event-buttons {
+    gap: 0.5rem;
+  }
+
+  .event-buttons button {
+    width: 100%; /* ✅ Full-width buttons on small screens */
+  }
 }
