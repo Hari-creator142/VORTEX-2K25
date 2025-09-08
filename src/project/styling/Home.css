@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Canvas for Live Wallpaper */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* stays behind everything */
+}
+
+.home-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background:transparent;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #0ff;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  color: #00f9ff;
+  font-weight: 700;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00f9ff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  color: #00f9ff;
+  text-shadow: 0 0 20px #00f9ff;
+}
+
+.hero-sub {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-college {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  color: #bbb;
+}
+
+.hero-tagline {
+  margin-top: 2rem;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.register-button {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: transparent;
+  border: 2px solid #00f9ff;
+  color: #00f9ff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.register-button:hover {
+  background: #00f9ff;
+  color: #000;
+  box-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff;
+}
+
+/* About Section */
+.aboutus {
+  text-align: center;
+  padding: 4rem 2rem;
+  font-weight: 600;
+  width: 70%;
+  margin: 0 auto;
+  color: #ddd;
+  line-height: 1.6;
+}

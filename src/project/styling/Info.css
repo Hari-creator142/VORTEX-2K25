@@ -1,0 +1,136 @@
+/* Page Layout */
+.info-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  padding-bottom: 3rem;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a0a0a;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #0ff;
+}
+
+.navbar-title {
+  font-size: 1.8rem;
+  color: #00f9ff;
+  font-weight: 700;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+  color: #00f9ff;
+}
+
+/* About Header */
+.about-header {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.about-header h2 {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+.presents {
+  margin-top: -0.5rem;
+  font-style: italic;
+  color: #aaa;
+}
+
+.vortex-title {
+  font-size: 3rem;
+  color: #00f9ff;
+  text-shadow: 0 0 15px #00f9ff;
+}
+
+.tagline {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  color: #bbb;
+}
+
+/* About Content */
+.about-content {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #ddd;
+}
+
+/* Faculty Section */
+.faculty-title {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  color: #00f9ff;
+  text-decoration: underline;
+}
+
+.faculty-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Faculty Card (rectangular like student cards) */
+.faculty-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  width: 220px;
+  box-shadow: 0 0 12px #00f9ff55;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faculty-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px #00f9ffaa;
+}
+
+/* Faculty Image */
+.faculty-img-rect {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid #00f9ff;
+}
+
+/* Faculty Text */
+.faculty-name {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #00f9ff;
+}
+
+.faculty-role {
+  margin: 0.2rem 0 1rem 0;
+  font-size: 0.95rem;
+  color: #bbb;
+}
