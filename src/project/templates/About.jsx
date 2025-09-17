@@ -1,6 +1,7 @@
 import React from "react";
 import "../styling/Info.css";
 import { Link } from "react-router-dom";
+import H from "../assets/H.jpg";   // ✅ Import your HOD image
 
 const About = () => {
   return (
@@ -29,10 +30,15 @@ const About = () => {
       {/* Intro */}
       <div className="about-content">
         <p>
-          We are thrilled to unveil the grand comeback of the IETE ECE Association’s signature symposium — VORTEX 2K25! This year, we’re raising the bar higher than ever with a bigger, bolder, and brighter celebration of technology, creativity, and collaboration. Behind the scenes, our dedicated team has poured countless hours of effort, passion, and innovation into crafting an experience that goes beyond expectations — an event where every moment is designed to inspire, engage, and ignite curiosity. 
+          We are thrilled to unveil the grand comeback of the IETE ECE Association’s
+          signature symposium — VORTEX 2K25! This year, we’re raising the bar higher
+          than ever with a bigger, bolder, and brighter celebration of technology,
+          creativity, and collaboration...
         </p>
         <p>
-          Get ready to witness the fusion of imagination and excellence. VORTEX 2K25 isn’t just another symposium — it’s the result of relentless hard work, a showcase of groundbreaking ideas, and a true milestone in our journey of innovation and collective brilliance.
+          Get ready to witness the fusion of imagination and excellence. VORTEX 2K25
+          isn’t just another symposium — it’s the result of relentless hard work,
+          a showcase of groundbreaking ideas, and a true milestone in our journey.
         </p>
       </div>
 
@@ -40,12 +46,12 @@ const About = () => {
       <h2 className="faculty-title"> Our Faculty Organizing Committee</h2>
       <div className="faculty-section">
         <div className="faculty-card">
-          <img src="/faculty1.png" alt="Prof 1" className="faculty-img-rect" />
+          <img src={H} alt="HOD" className="faculty-img-rect" />   {/* ✅ Updated */}
           <h3 className="faculty-name">Dr.N.Sudhakar Reddy</h3>
-          <p className="faculty-role">Head of Department</p>
-        </div>
+          <p className="faculty-role">Head of Department, ECE</p>
         </div>
       </div>
+    </div>
   );
 };
 
