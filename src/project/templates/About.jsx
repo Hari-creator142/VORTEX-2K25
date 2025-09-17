@@ -41,16 +41,11 @@ const About = () => {
       <div className="faculty-section">
         <div className="faculty-card">
           <img src="/faculty1.png" alt="Prof 1" className="faculty-img-rect" />
-          <h3 className="faculty-name">H.O.D</h3>
+          <h3 className="faculty-name">Dr.N.Sudhakar Reddy</h3>
           <p className="faculty-role">Head of Department</p>
         </div>
-        <div className="faculty-card">
-          <img src="/faculty2.png" alt="Prof 2" className="faculty-img-rect" />
-          <h3 className="faculty-name">T.V.V Sir</h3>
-          <p className="faculty-role">Faculty Coordinator</p>
         </div>
       </div>
-    </div>
   );
 };
 
